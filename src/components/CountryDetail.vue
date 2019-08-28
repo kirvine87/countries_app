@@ -1,6 +1,8 @@
 <template lang="html">
   <div class="">
-    <p>{{country.name}}</p>
+    <h2>{{country.name}}</h2>
+    <p>Capital: {{country.capital}}</p>
+    <p>Population: {{country.population}}</p>
   </div>
 </template>
 

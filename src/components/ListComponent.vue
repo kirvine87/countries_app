@@ -1,4 +1,4 @@
-<template lang="html">
+<!-- <template lang="html">
   <li @click="handleClick">{{country.name}}</li>
 </template>
 
@@ -17,4 +17,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
-</style>
+li:hover {
+  text-shadow: 0 0 3px lightseagreen;
+  font-size: 1.25em;
+}
+</style> -->

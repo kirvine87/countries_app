@@ -1,4 +1,4 @@
-<template lang="html">
+<!-- <template lang="html">
 
   <div class="">
     <ul>
@@ -7,19 +7,19 @@
 
   </div>
 
-</template>
+</template> -->
 
-<script>
-import ListComponent from './ListComponent.vue';
+<!-- // <script>
+// import ListComponent from './ListComponent.vue';
+//
+// export default {
+//   name: 'countries-list',
+//   props: ['countries'],
+//   components: {
+//     "list-component": ListComponent
+//   }
+// }
+// </script> -->
 
-export default {
-  name: 'countries-list',
-  props: ['countries'],
-  components: {
-    "list-component": ListComponent
-  }
-}
-</script>
-
-<style lang="css" scoped>
-</style>
+<!-- /* <style lang="css" scoped>
+</style>  */ -->
