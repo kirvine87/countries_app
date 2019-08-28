@@ -3,6 +3,7 @@
     <h1>Country</h1>
     <div class="main-container">
       <!-- <countries-list :countries='countries'></countries-list> -->
+      <country-search :countries="countries"></country-search>
       <country-select :countries="countries" v-model="selectedCountry"></country-select>
       <country-detail v-if="selectedCountry" :country="selectedCountry"></country-detail>
     </div>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import CountrySearch from './components/CountrySearch.vue'
 import CountrySelect from './components/CountrySelect.vue'
 // import CountriesList from './components/CountriesList.vue';
 import CountryDetail from './components/CountryDetail.vue';
@@ -36,6 +38,7 @@ export default {
   components: {
     // "countries-list": CountriesList,
     "country-select": CountrySelect,
+    "country-search": CountrySearch,
     "country-detail": CountryDetail
 }
 
