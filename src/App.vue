@@ -2,11 +2,14 @@
 
   <div class="">
     <h1>Country</h1>
+    <countries-list :countries='countries'></countries-list>
   </div>
 
 </template>
 
 <script>
+import CountriesList from './components/CountriesList.vue';
+
 export default {
   name: 'app',
   data(){
@@ -19,7 +22,11 @@ export default {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(res => res.json())
     .then(data => this.countries = data)
-  }
+  },
+  components: {
+    "countries-list": CountriesList
+}
+
 }
 </script>
 
